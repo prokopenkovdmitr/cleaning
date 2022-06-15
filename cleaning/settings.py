@@ -124,8 +124,8 @@ STATIC_ROOT = "/home/dmprok.pythonanywhere.com/cleaning/main/static"
 #STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 STATICFILES_DIRS = [
-    BASE_DIR / "static",
-    #'/var/www/static/',
+    #BASE_DIR / "static",
+    #'/home/dmprok.pythonanywhere.com/cleaning/main/static/',
 ]
 
 # Default primary key field type
