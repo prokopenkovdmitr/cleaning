@@ -1,0 +1,62 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+
+{% block title %}Главная страница{% endblock %}
+{% block description %}Главная страница{% endblock %}
+
+{% block content %}
+<div class="header">
+    <div class="container-fluid d-none d-none d-xl-block d-xxl-none d-none d-xxl-block">
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="col-5">
+                <img src="{% static 'main/img/main.png' %}" alt="Лого">
+                main.png
+                <p>Текст-заполнитель — это текст, который имеет некоторые характеристики реального письменного текста, но является случайным набором слов или сгенерирован иным образом. Его можно использовать для отображения образца шрифтов, создания текста для тестирования или обхода спам-фильтра</p>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header-mobile">
+    <div class="container-fluid d-none d-block d-sm-none d-none d-sm-block d-md-none d-none d-md-block d-lg-none d-none d-lg-block d-xl-none">
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="col-5">
+                <img src="{% static 'main/img/main.png' %}" alt="Лого">
+                main.png
+                <p>Текст-заполнитель — это текст, который имеет некоторые характеристики реального письменного текста, но является случайным набором слов или сгенерирован иным образом. Его можно использовать для отображения образца шрифтов, создания текста для тестирования или обхода спам-фильтра</p>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="main">	
+	<div class="row">
+    	<div class="col">
+    		<img onclick="window.location.href = '{% url 'electrician' %}';" src="{% static 'main/img/logo.ico' %}" alt="Лого">
+    		<p><button onclick="window.location.href = '{% url 'electrician' %}';" type="button" class="btn btn-info btn-lg">Electrician</button></p>
+    	</div>
+    	<div class="col">
+    		<img onclick="window.location.href = '{% url 'plumber' %}';" src="{% static 'main/img/logo.ico' %}" alt="Лого">
+    		<p><button onclick="window.location.href = '{% url 'plumber' %}';" type="button" class="btn btn-info btn-lg">Plumber</button></p>
+    	</div>
+    	<div class="col">
+    		<img onclick="window.location.href = '{% url 'cleaning' %}';" src="{% static 'main/img/logo.ico' %}" alt="Лого">
+    		<p><button onclick="window.location.href = '{% url 'cleaning' %}';" type="button" class="btn btn-info btn-lg">Cleaning</button></p>
+    	</div>
+	</div>
+</div>
+
+
+
+{% endblock %}
